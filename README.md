@@ -5,7 +5,7 @@ Teeny tiny Node.js composition stores
 ## Installation
 
 ```bash
-yarpm add @snickbit/ninia
+yarn add @snickbit/ninia
 ```
 
 ```bash
