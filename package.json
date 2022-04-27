@@ -1,0 +1,69 @@
+{
+	"name": "@snickbit/ninia",
+	"description": "Teeny tiny Node.js composition stores",
+	"version": "0.0.0",
+	"license": "MIT",
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"exports": {
+		"require": "./dist/index.js",
+		"import": "./dist/index.mjs",
+		"types": "./dist/index.d.ts"
+	},
+	"engines": {
+		"node": ">= 12"
+	},
+	"scripts": {
+		"clean": "shx rm -rf ./dist",
+		"test": "jest",
+		"build": "tsup",
+		"build:meta": "yarpm build --metafile",
+		"prod": "yarpm build --minify",
+		"watch": "yarpm build --watch",
+		"depcheck": "depcheck",
+		"docs": "typedoc",
+		"release": "release-it --ci"
+	},
+	"dependencies": {
+		"@snickbit/utilities": "3.0.7",
+		"mitt": "^3.0.0"
+	},
+	"devDependencies": {
+		"@types/jest": "^27.4.1",
+		"jest": "^27.5.1",
+		"shx": "^0.3.4",
+		"ts-jest": "^27.1.4",
+		"tsup": "^5.12.6",
+		"typedoc": "^0.22.15",
+		"typedoc-plugin-markdown": "^3.12.0",
+		"typedoc-plugin-no-inherit": "^1.3.1",
+		"typescript": "^4.6.3"
+	},
+	"jest": {
+		"preset": "ts-jest",
+		"testEnvironment": "node"
+	},
+	"tsup": {
+		"entry": [
+			"src/index.ts"
+		],
+		"clean": true,
+		"dts": true,
+		"format": [
+			"esm",
+			"cjs"
+		]
+	},
+	"release-it": {
+		"git": {
+			"commitMessage": "chore: release v${version}"
+		},
+		"npm": {
+			"skipChecks": true
+		}
+	}
+}

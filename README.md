@@ -1,6 +1,6 @@
 # @snickbit/ninia
 
-Teeny tiny composition stores for Vue.js
+Teeny tiny Node.js composition stores
 
 ## Installation
 
