@@ -1,5 +1,12 @@
 # @snickbit/ninia Changelog
 
+## 0.0.7
+
+### Patch Changes
+
+- [6afccab](https://github.com/snickbit/ninia/commit/6afccab) **chore**:  update dependencies
+
+
 ## 0.0.6
 
 ### Patch Changes
