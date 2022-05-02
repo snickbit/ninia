@@ -20,4 +20,4 @@ npm add @snickbit/ninia
 
 Copyright (c) 2022 - **Nicholas Lowe** aka **Snickbit**
 
-[MIT License](https://github.com/snickbit/ninia/blob/master/LICENSE)
+[MIT License](https://github.com/snickbit/ninia/blob/main/LICENSE)
