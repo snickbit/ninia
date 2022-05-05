@@ -1,5 +1,14 @@
 # @snickbit/ninia Changelog
 
+## 0.0.9
+
+### Patch Changes
+
+- [c5b1e62](https://github.com/snickbit/ninia/commit/c5b1e62) **build**:  add dev watcher scripts with source maps
+- [b5909f6](https://github.com/snickbit/ninia/commit/b5909f6) **build**:  migrate to nx
+- [dc1b8a4](https://github.com/snickbit/ninia/commit/dc1b8a4) **chore**:  update dependencies
+
+
 ## 0.0.8
 
 ### Patch Changes
