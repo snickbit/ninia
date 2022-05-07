@@ -1,5 +1,14 @@
 # @snickbit/ninia Changelog
 
+## 0.0.10
+
+### Patch Changes
+
+- [703ccb1](https://github.com/snickbit/ninia/commit/703ccb1) **chore**(dep):  update dependencies
+- [26396b9](https://github.com/snickbit/ninia/commit/26396b9) **style**:  reformat
+- [78c8458](https://github.com/snickbit/ninia/commit/78c8458) **chore**:  update dependencies
+
+
 ## 0.0.9
 
 ### Patch Changes
