@@ -8,7 +8,6 @@
 - [b5909f6](https://github.com/snickbit/ninia/commit/b5909f6) **build**:  migrate to nx
 - [dc1b8a4](https://github.com/snickbit/ninia/commit/dc1b8a4) **chore**:  update dependencies
 
-
 ## 0.0.8
 
 ### Patch Changes
@@ -17,20 +16,17 @@
 - [bb2dc13](https://github.com/snickbit/ninia/commit/bb2dc13) **chore**:  update dependencies
 - [2429cdd](https://github.com/snickbit/ninia/commit/2429cdd) **chore**:  update build config
 
-
 ## 0.0.7
 
 ### Patch Changes
 
 - [6afccab](https://github.com/snickbit/ninia/commit/6afccab) **chore**:  update dependencies
 
-
 ## 0.0.6
 
 ### Patch Changes
 
 - [5ae815f](https://github.com/snickbit/ninia/commit/5ae815f) **chore**:  update build config
-
 
 ## 0.0.4
 
