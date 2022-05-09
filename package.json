@@ -1,32 +1,33 @@
 {
 	"name": "@snickbit/ninia",
-	"description": "Teeny tiny Node.js composition stores",
 	"version": "0.0.10",
+	"description": "Teeny tiny Node.js composition stores",
 	"license": "MIT",
+	"exports": {
+		"require": "./dist/index.js",
+		"import": "./dist/index.mjs",
+		"types": "./dist/index.d.ts"
+	},
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
 	"types": "./dist/index.d.ts",
 	"files": [
 		"dist"
 	],
-	"exports": {
-		"require": "./dist/index.js",
-		"import": "./dist/index.mjs",
-		"types": "./dist/index.d.ts"
-	},
-	"engines": {
-		"node": ">= 12"
-	},
 	"scripts": {
-		"clean": "shx rm -rf ./dist",
-		"test": "jest",
 		"build": "tsup",
+		"clean": "shx rm -rf ./dist",
+		"depcheck": "depcheck",
+		"dev": "npm run build -- --sourcemap",
+		"docs": "typedoc",
 		"meta": "npm run prod -- --metafile",
 		"prod": "npm run build -- --minify",
-		"dev": "npm run build -- --sourcemap",
-		"watch": "npm run dev -- --watch",
-		"depcheck": "depcheck",
-		"docs": "typedoc"
+		"test": "jest",
+		"watch": "npm run dev -- --watch"
+	},
+	"jest": {
+		"preset": "ts-jest",
+		"testEnvironment": "node"
 	},
 	"dependencies": {
 		"@snickbit/utilities": "^3.0.17",
@@ -42,9 +43,13 @@
 		"typedoc-plugin-markdown": "^3.12.0",
 		"typescript": "^4.6.3"
 	},
-	"jest": {
-		"preset": "ts-jest",
-		"testEnvironment": "node"
+	"engines": {
+		"node": ">= 12"
+	},
+	"nx": {
+		"implicitDependencies": [
+			"@snickbit/utilities"
+		]
 	},
 	"tsup": {
 		"entry": [
@@ -55,11 +60,6 @@
 		"format": [
 			"esm",
 			"cjs"
-		]
-	},
-	"nx": {
-		"implicitDependencies": [
-			"@snickbit/utilities"
 		]
 	}
 }
