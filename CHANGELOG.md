@@ -1,5 +1,14 @@
 # @snickbit/ninia Changelog
 
+## 0.0.12
+
+### Patch Changes
+
+- [8987721](https://github.com/snickbit/ninia/commit/8987721) **chore**(release):  publish
+- [6ad1f90](https://github.com/snickbit/ninia/commit/6ad1f90) **build**:  switch to pnpm for running
+- [1744815](https://github.com/snickbit/ninia/commit/1744815) **chore**:  sort package.json
+- [b7caca0](https://github.com/snickbit/ninia/commit/b7caca0) **fix**:  remove workspace protocol
+
 ## 0.0.11
 
 ### Patch Changes
