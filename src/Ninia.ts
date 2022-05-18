@@ -13,12 +13,12 @@ export type WaitingArray = PromiseResolve<any>[]
 export type Waiting = Record<StoreId, WaitingArray>
 
 export class Ninia {
-	private static _instance: Ninia
-	private static _id: string
 	stores: Stores = {}
 	waiting: Waiting = {}
 	pending: Pending = {}
 	emitter = mitt()
+	private static _instance: Ninia
+	private static _id: string
 
 	constructor() {
 		if (Ninia._instance) {
@@ -52,20 +52,14 @@ export class Ninia {
 	events() {
 		return this.emitter.all
 	}
-
-
 	on(...args: any[]): void {
 		const callback = args.pop()
 		this.emitter.on(args.join('.'), callback)
 	}
-
-
 	off(...args: any[]): void {
 		const callback = args.pop()
 		this.emitter.off(args.join('.'), callback)
 	}
-
-
 	emit(...args: any[]): void {
 		const data = args.pop()
 		this.emitter.emit(args.join('.'), data)

@@ -44,6 +44,8 @@ export class Store {
 		persist: []
 	}
 
+	protected id = (...keys: string[]) => ['ninia', this.$id, ...keys].join('.')
+
 	constructor(name: string, options?: Partial<StoreOptions>, hydration?: StoreState) {
 		this.$config(name, options, hydration)
 
@@ -115,9 +117,6 @@ export class Store {
 	get $ready() {
 		return this.ready
 	}
-
-	protected id = (...keys: string[]) => ['ninia', this.$id, ...keys].join('.')
-
 	protected callAction(name: string, ...args: any[]) {
 		return this.actions[name].call(this, ...args)
 	}
