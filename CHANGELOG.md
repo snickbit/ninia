@@ -1,5 +1,12 @@
 # @snickbit/ninia Changelog
 
+## 0.0.13
+
+### Patch Changes
+
+- [21a9f5b](https://github.com/snickbit/ninia/commit/21a9f5b) **build**:  remove nx
+- [699496a](https://github.com/snickbit/ninia/commit/699496a) **style**:  relint
+
 ## 0.0.12
 
 ### Patch Changes
