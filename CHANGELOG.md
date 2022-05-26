@@ -1,5 +1,12 @@
 # @snickbit/ninia Changelog
 
+## 0.0.14
+
+### Patch Changes
+
+- [0e98939](https://github.com/snickbit/ninia/commit/0e98939) **style**:  heavy code restyling
+- [c0d2b7f](https://github.com/snickbit/ninia/commit/c0d2b7f) **chore**:  bump dependencies
+
 ## 0.0.13
 
 ### Patch Changes
