@@ -9,7 +9,6 @@ export function createStore(name = 'default', options = {}, hydration = {}) {
 		let store
 
 		if (ninia.pending[name]) {
-
 			store = ninia.pending[name]
 			store.$config(name, options, hydration)
 		} else {
@@ -35,7 +34,7 @@ export function useStore(name = 'default') {
 	return ninia.get(name)
 }
 
-useStore.promise = async (name = 'default') => {
+useStore.promise = async(name = 'default') => {
 	if (!ninia.get(name)) {
 		return new Promise((resolve: PromiseResolve<any>) => {
 			ninia.wait(name, resolve)

@@ -1,13 +1,13 @@
 import {objectClone} from '@snickbit/utilities'
-import {ninia} from './index'
 import {Handler} from 'mitt'
+import {ninia} from './index'
 
 export type StoreKey = string
 export type StoreValue = any
 
 export interface StoreOptions {
 	name: string
-	persist?: boolean | string[]
+	persist?: string[] | boolean
 	getters?: StoreGetters
 	actions?: StoreActions
 
@@ -33,10 +33,15 @@ export interface Store {
 
 export class Store {
 	protected state: StoreState = {}
+
 	protected originalState: StoreState = {}
+
 	protected proxy: Store
+
 	protected actions: StoreActions = {}
+
 	protected getters: StoreGetters = {}
+
 	protected ready = false
 
 	options: StoreOptions = {
@@ -69,7 +74,7 @@ export class Store {
 
 				return Reflect.get(target, prop, receiver)
 			},
-			set: function (target: Store, prop: string, value?: any) {
+			set(target: Store, prop: string, value?: any) {
 				target.$set(prop, value)
 				return true
 			}
@@ -117,6 +122,7 @@ export class Store {
 	get $ready() {
 		return this.ready
 	}
+
 	protected callAction(name: string, ...args: any[]) {
 		return this.actions[name].call(this, ...args)
 	}
@@ -126,7 +132,7 @@ export class Store {
 	}
 
 	$config(name: string, options?: Partial<StoreOptions>, hydration?: StoreState) {
-		let isPending = (!options && !hydration)
+		let isPending = !options && !hydration
 		if (!options) {
 			options = {}
 		}
