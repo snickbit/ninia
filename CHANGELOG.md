@@ -1,5 +1,12 @@
 # @snickbit/ninia Changelog
 
+## 0.0.17
+
+### Patch Changes
+
+- [d2f3df7](https://github.com/snickbit/ninia/commit/d2f3df7) **chore**:  update dependencies
+- [f64789e](https://github.com/snickbit/ninia/commit/f64789e) **style**:  lint
+
 ## 0.0.14
 
 ### Patch Changes
