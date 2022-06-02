@@ -1,6 +1,6 @@
 {
 	"name": "@snickbit/ninia",
-	"version": "0.0.17",
+	"version": "0.0.18",
 	"description": "Teeny tiny Node.js composition stores",
 	"license": "MIT",
 	"exports": {
@@ -30,7 +30,7 @@
 		"testEnvironment": "node"
 	},
 	"dependencies": {
-		"@snickbit/utilities": "^3.0.24",
+		"@snickbit/utilities": "^3.0.25",
 		"mitt": "^3.0.0"
 	},
 	"devDependencies": {
