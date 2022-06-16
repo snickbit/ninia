@@ -1,5 +1,13 @@
 # @snickbit/ninia Changelog
 
+## 0.0.20
+
+### Patch Changes
+
+- [06d5191](https://github.com/snickbit/ninia/commit/06d5191) **chore**:  bump dependencies
+- [8df7faa](https://github.com/snickbit/ninia/commit/8df7faa) **chore**:  bump dependencies
+- [fbc0eee](https://github.com/snickbit/ninia/commit/fbc0eee) **chore**:  bump deps
+
 ## 0.0.17
 
 ### Patch Changes
